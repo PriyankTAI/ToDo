@@ -60,6 +60,7 @@ app.post("/delete/:id",function(req,res){
     })
 });
 
-app.listen(4000,function(){
-    console.log(`Listning on Port:4000`);
+const port=process.env.PORT||3000;
+app.listen(port,function(){
+    console.log(`Listning on Port:${port}`);
 });
